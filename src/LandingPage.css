@@ -1,0 +1,119 @@
+.LMainPage {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  height: 100vh; 
+  background-image: url('./Image/RBG.png'); 
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat;
+  filter: brightness(0.6);
+  background-size: 20%;
+  background-color: black;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; 
+  position: relative; 
+}
+.LMainPage:hover{
+    transition: all ease 2s;
+    background-size: 40%;
+}
+
+.LSpan1,
+.LSpan2 {
+  position: absolute; 
+  top: 0; 
+  left: 0;
+}
+
+.LSpan1 {
+  border-radius: 10px;
+  width: 300px;
+  margin-right: 40px;
+  color: white;
+  box-shadow: 10px 10px 200px 300px violet;
+  filter: blur(400px);
+}
+.buttons-container {
+  position: absolute; /* Position the container absolutely */
+  top: 20px; /* Adjust top positioning as needed */
+  right: 20px; /* Adjust right positioning as needed */
+}
+
+.buttons-container button {
+  
+  display: inline-block;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  will-change: box-shadow,transform;
+  background: radial-gradient( 100% 100% at 100% 0%, #89E5FF 0%, Violet 100% );
+  box-shadow: 0px 2px 4px lightblue, inset 0px -3px 0px rgba(255, 255, 255, 0.5);
+  padding: 0 32px;
+  border-radius: 6px;
+  color: #fff;
+  height: 48px;
+  font-size: 18px;
+  text-shadow: 0 1px 0 black;
+  transition: box-shadow 0.15s ease,transform 0.15s ease;
+  margin: 10px;
+
+}
+
+@keyframes shakeAnimation {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-5px) rotate(-5deg); }
+  50% { transform: translateX(5px) rotate(5deg); }
+  75% { transform: translateX(-5px) rotate(-5deg); }
+  100% { transform: translateX(0); }
+}
+
+.buttons-container button:hover {
+  /* Existing hover styles */
+  animation: shakeAnimation 0.5s ease; /* Apply shake animation on hover */
+}
+
+.buttons-container button:hover {
+  background-color: white; /* Change background color on hover */
+  color: #333;
+  font-weight: bold;
+}
+
+/* Animation for buttons */
+@keyframes buttonAnimation {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+.buttons-container button:hover {
+  box-shadow: 0px 10px 10px  white , inset 0px -3px 0px white;
+  transform: translateY(-2px);
+}
+
+.buttons-container button:active{
+  box-shadow: inset 0px 3px 7px #3c4fe0;
+  transform: translateY(2px);
+}
+.LSpan2 {
+  border-radius: 10px;
+  width: 500px;
+  margin-right: 20px;
+  color: white;
+  box-shadow: 10px 10px 200px 100px white;
+  filter: blur(40000px);
+}
+
+.Signup-container:hover + .LSpan1,
+.Signup-container:hover + .LSpan2 {
+  
+  box-shadow: 10px 10px 200px 100px green; 
+}
+
+
+
+
+
+
+

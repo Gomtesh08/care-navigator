@@ -1,0 +1,78 @@
+/* Existing.css */
+
+/* Common styles */
+.Existing_Form {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.Existing_container {
+  position: relative;
+}
+
+.Existing_image_container {
+  position: relative; /* Change position to relative */
+  display: flex;
+  justify-content: center;
+}
+
+.Existing_image img {
+  margin-top: 10vh;
+  max-width: 20vw; /* Ensure the image doesn't exceed its container */
+  height: auto;
+}
+
+.Existing_Form .inner_Search {
+  width: 100%; /* Make the search input full width */
+  max-width: 30vw; /* Increase the maximum width of the search box */
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px black;
+}
+
+.inner_Search:hover {
+  box-shadow: 10px 10px 10px black;
+}
+
+.Existing_Form .Existing_Search_Box {
+  width: 100%; /* Make the search input full width */
+  padding: 1rem 1.1rem;
+  border-radius: 0.5rem;
+  margin-right: 1rem;
+  color: black;
+  background-color: white;
+  font-size: 1vw;
+  font-weight: 700;
+  border: none;
+}
+
+.Existing_Form .Searchbtn {
+  padding: 1rem 1.1rem;
+  border-radius: 0.5rem;
+  color: black;
+  background-color: white;
+  cursor: pointer;
+  font-size: 1vw;
+  font-weight: 700;
+  border: none;
+  box-shadow: 0px 0px 10px black;
+}
+.Searchbtn:hover {
+  box-shadow: 8px 8px 10px black;
+  animation: 0.5s shakeAnimation;
+  background-color: #007bff;
+  color: white;
+}
+
+
+/* Responsive styles using media queries */
+@media screen and (max-width: 768px) {
+  .Existing_Form {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+  }
+  
+  .Existing_Form .Searchbtn {
+    margin-top: 1rem; /* Add space between search input and button */
+  }
+}

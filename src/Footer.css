@@ -1,0 +1,25 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  height: 100%;
+  width: 100%;
+}
+
+.footer{
+  display: flex;
+  justify-content: space-around;
+  padding: 5vh 10vh 10vh 10vh;
+  font-weight: 400;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  color: black;
+}
+
+p{
+  padding-top: 1rem;
+}
